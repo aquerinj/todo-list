@@ -6,23 +6,22 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
 
-public class MainActivity extends AppCompatActivity {
+public class Classement extends AppCompatActivity {
 
-    private Button confirm_button;
+    private Button add_result_button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_classement);
 
-        this.confirm_button = (Button) findViewById(R.id.confirm_button);
+        this.add_result_button = (Button) findViewById(R.id.add_result_button);
 
-        confirm_button.setOnClickListener(new View.OnClickListener() {
+        add_result_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent otherActivity = new Intent(getApplicationContext(), Classement.class);
+                Intent otherActivity = new Intent(getApplicationContext(), FormulaireRequete.class);
                 startActivity(otherActivity);
                 finish();
             }

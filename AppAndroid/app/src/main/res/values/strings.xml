@@ -1,3 +1,19 @@
 <resources>
+
+    <!-- activity Main-->
     <string name="app_name">AppBlockchain</string>
+    <string name="welcome_message_pseudo">Bienvenue ! Veuillez entrer votre pseudo :</string>
+    <string name="titre_main">Application Blockchain</string>
+
+    <!-- Classement-->
+    <string name="titre_classment">Classement</string>
+
+    <!-- FormulaireRequete-->
+    <string-array name="array">
+        <item>Kg</item>
+        <item>Gram</item>
+        <item>Tons</item>
+    </string-array>
+
 </resources>
+

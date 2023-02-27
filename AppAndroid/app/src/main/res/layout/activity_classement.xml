@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    tools:context=".Classement">
+
+    <!-- Texte d'en-tête -->
+
+    <TableLayout
+        android:id="@+id/table_layout"
+        android:layout_width="350dp"
+        android:layout_height="549dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:padding="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/add_result_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/heading_text_view">
+
+        <!-- En-tête de tableau -->
+        <TableRow>
+
+            <TextView
+                android:padding="4dp"
+                android:text="Rank"
+                android:textStyle="bold" />
+
+            <TextView
+                android:padding="4dp"
+                android:text="Pseudo"
+                android:textStyle="bold" />
+
+            <TextView
+                android:padding="4dp"
+                android:text="Elo"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <!-- Ligne de données 1 -->
+        <TableRow>
+
+            <TextView
+                android:padding="4dp"
+                android:text="1" />
+
+            <TextView
+                android:padding="4dp"
+                android:text="John" />
+
+            <TextView
+                android:padding="4dp"
+                android:text="2000" />
+
+        </TableRow>
+
+        <!-- Ligne de données 2 -->
+        <TableRow>
+
+            <TextView
+                android:padding="4dp"
+                android:text="2" />
+
+            <TextView
+                android:padding="4dp"
+                android:text="Jane" />
+
+            <TextView
+                android:padding="4dp"
+                android:text="1800" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/heading_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/titre_classment"
+        android:textColor="#333333"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/table_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <!-- Bouton Ajouter un résultat -->
+    <Button
+        android:id="@+id/add_result_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:layout_marginLeft="128dp"
+        android:layout_marginTop="32dp"
+        android:background="#2196F3"
+        android:text="ADD RESULT"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/table_layout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
